@@ -1,0 +1,59 @@
+// Page
+
+.root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1316px;
+
+  @media (940px <= width < 1380px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (width < 940px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  // Header
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: grid;
+    row-gap: 24px;
+
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .description {
+      color: #828282;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  .footer {
+    margin-top: 48px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+      color: #828282;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .developer {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

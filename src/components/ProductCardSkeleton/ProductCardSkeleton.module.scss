@@ -1,0 +1,57 @@
+// ProductCardSkeleton
+
+.root {
+  height: 482px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  @media (width > 1380px) {
+    width: calc(25% - 32px);
+  }
+
+  @media (940px <= width < 1380px) {
+    width: calc(33.33% - 24px);
+  }
+
+  @media (620px <= width < 940px) {
+    width: calc(50% - 16px);
+  }
+
+  @media (width < 620px) {
+    width: calc(100% - 16px);
+  }
+
+  // Top
+
+  .top {
+    width: 100%;
+    height: 400px;
+
+    background: #e5e5e5;
+
+    border-radius: 8px;
+    animation: rectangleAnim 1s ease infinite alternate;
+  }
+
+  // Bottom
+
+  .bottom {
+    width: 100%;
+    height: 70px;
+
+    background: #e5e5e5;
+
+    border-radius: 8px;
+    animation: rectangleAnim 1s ease infinite alternate;
+  }
+}
+
+@keyframes rectangleAnim {
+  to {
+    opacity: 0.5;
+  }
+}

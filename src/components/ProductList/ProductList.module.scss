@@ -1,0 +1,42 @@
+// ProductList
+
+.root {
+  // Filters
+
+  .filters {
+    margin-bottom: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .quantity {
+      font-size: 14px;
+    }
+  }
+
+  // List
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (width > 1380px) {
+      margin-right: -32px;
+      column-gap: 32px;
+      row-gap: 32px;
+    }
+
+    @media (940px <= width < 1380px) {
+      margin-right: -24px;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    @media (width < 940px) {
+      margin-right: -16px;
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+}
