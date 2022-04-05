@@ -10,7 +10,7 @@ Content: [artisant.io](https://artisant.io/)
 
 - `public/*` - static assets including fonts and images
 - `src/lib/*` - short for "library", a collection of helpful utilities including fonts and types
-- `src/styles/*` - a small amount of global styles. I'm mostly using vanilla Tailwind CSS
+- `src/styles/*` - a small amount of global styles. I'm mostly using SCSS Modules
 
 ## Clone & install
 
